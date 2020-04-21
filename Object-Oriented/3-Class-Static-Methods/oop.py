@@ -45,6 +45,8 @@ print(emp_2.raise_amt)
 
 emp_1.set_raise_amt(2)
 ## you can change class methods from instance or objects which is risky
+## you can run a classmethod from an instance or object of a class it does not necesarrily mean you need to run that method from the class
+# only
 print(Employee.raise_amt)
 print(emp_1.raise_amt)
 print(emp_2.raise_amt)
