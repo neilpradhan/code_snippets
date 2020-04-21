@@ -33,7 +33,6 @@ class Employee:
             return False
         return True
 
-
 emp_1 = Employee('Corey', 'Schafer', 50000)
 emp_2 = Employee('Test', 'Employee', 60000)
 
@@ -42,6 +41,16 @@ Employee.set_raise_amt(1.05)
 print(Employee.raise_amt)
 print(emp_1.raise_amt)
 print(emp_2.raise_amt)
+
+
+emp_1.set_raise_amt(2)
+## you can change class methods from instance or objects which is risky
+print(Employee.raise_amt)
+print(emp_1.raise_amt)
+print(emp_2.raise_amt)
+
+
+
 
 emp_str_1 = 'John-Doe-70000'
 emp_str_2 = 'Steve-Smith-30000'
