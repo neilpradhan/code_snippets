@@ -29,6 +29,8 @@ class Employee:
         first, last, pay = emp_str.split('-')
         return cls(first, last, pay)
 
+    
+    ## static methods do not take self
     @staticmethod
     def is_workday(day):
         if day.weekday() == 5 or day.weekday() == 6:
