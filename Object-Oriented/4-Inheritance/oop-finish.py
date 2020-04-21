@@ -21,6 +21,7 @@ class Developer(Employee):
 
     def __init__(self, first, last, pay, prog_lang):
         super().__init__(first, last, pay)
+#         Employee.__init__(self,first,last,pay)
         self.prog_lang = prog_lang
 
 
@@ -32,7 +33,7 @@ class Manager(Employee):
             self.employees = []
         else:
             self.employees = employees
-
+## these methods are taking in emp objects and working around with them
     def add_emp(self, emp):
         if emp not in self.employees:
             self.employees.append(emp)
