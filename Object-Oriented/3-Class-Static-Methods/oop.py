@@ -21,7 +21,9 @@ class Employee:
     @classmethod
     def set_raise_amt(cls, amount):
         cls.raise_amt = amount
-
+    
+    
+    ## alternative constructor
     @classmethod
     def from_string(cls, emp_str):
         first, last, pay = emp_str.split('-')
@@ -50,6 +52,10 @@ emp_1.set_raise_amt(2)
 print(Employee.raise_amt)
 print(emp_1.raise_amt)
 print(emp_2.raise_amt)
+
+
+## class methods as alternative constructors
+## means is there a way to just pass a string and create an Employee obj from that
 
 
 
