@@ -12,6 +12,7 @@ class Employee:
     def fullname(self):
         return '{} {}'.format(self.first, self.last)
     def apply_raise(self):
+#         class variables can only be applied throgh instance of the object or class itself
         self.pay = self.pay * self.raise_amt
 
         
